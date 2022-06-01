@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.service.EmployeeService">
+<!--    <insert id="addEmploee" parameterType="com.example.demo.model.Employee">-->
+<!--         insert into employee (id,employees,age,sex,province,city,image)-->
+<!--           values (#{id},#{employees},#{age},#{sex},#{province},#{city},#{image})-->
+<!--    </insert>-->
+<!--    <select id="getProvinces" resultType="java.util.Map">-->
+<!--        select * from provinces-->
+<!--    </select>-->
+<!--    <select id="getCitys" resultType="java.util.Map">-->
+<!--        select * from city-->
+<!--    </select>-->
+<!--    <select id="getProvinceName" resultType="java.lang.String" parameterType="string">-->
+<!--        select province as name from provinces where id=#{id}-->
+<!--    </select>-->
+    <select id="getUser" resultType="java.util.Map">
+        select * from buys
+    </select>
+
+
+
+<!--    <select id="getAll" resultMap="students">-->
+<!--        select t.name classname,s.name studentname,s.hege fenshu from classname t left join student s on t.id=s.classid where s.id is not null-->
+<!--    </select>-->
+
+</mapper>
